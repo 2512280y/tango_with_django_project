@@ -27,6 +27,9 @@ class Page(models.Model):
     views = models.IntegerField(default=0)
 
 
+    TITLE_MAX_LENGTH = 128
+
+
     def __str__(self):
         return self.title
 
